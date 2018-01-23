@@ -1,20 +1,16 @@
 
 
-main {
-  background-image: url('images/outerspace_landscape.jpeg');
-background-repeat:no-repeat;
--webkit-background-size:cover;
--moz-background-size:cover;
--o-background-size:cover;
-background-size:cover;
-background-position:center;
-background-color: gray;
-height: 700px;
+body {
+    background: url(../images/outerspace_landscape.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 nav {
-  padding-top: 10px;
-  padding-right: 10px;
+  padding: 10px 60px 0px 60px;
   text-align: left;
   background-color: gray;
   position: relative;
@@ -37,17 +33,57 @@ nav {
 }
 
 nav ul {
-	margin-left: 60px;
 	margin-top: 6px;
 }
 
 nav ul li{
     list-style-type: none;
     display: inline;
-
 }
 
 nav ul li::after{
-    content: " |";
-    
+    content: " |";    
 }
+
+div {
+  position: relative;
+}
+
+
+.box.green{ 
+  width: 600px;
+  height: 300px;
+  border: 10px green dotted;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+.box.small {
+  width: 200px;
+  height: 200px;
+}
+
+div:nth-child(2) {
+  background-image: url(../images/spacecat.png);
+      -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  left: 250px;
+  bottom: 400px;
+}
+
+div:nth-child(3) {
+  background-image: url(../images/spacedog.png);
+      -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  left: 250px;
+  bottom: 400px;
+  left: 800px;
+  bottom: 300px;
+}
+
+
