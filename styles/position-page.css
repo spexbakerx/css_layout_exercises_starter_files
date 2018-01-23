@@ -20,20 +20,19 @@ nav {
 .logo {
   position: absolute;
   left: 40px;
-     width: 35px;
-    height: 35px;
-    position: absolute;
-    /*overflow: hidden;*/
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    border: 1px solid black;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 
 nav ul {
-	margin-top: 6px;
+	line-height: 0px;
 }
 
 nav ul li{
@@ -45,45 +44,32 @@ nav ul li::after{
     content: " |";    
 }
 
-div {
-  position: relative;
-}
 
 
-.box.green{ 
+.box { 
   width: 600px;
   height: 300px;
   border: 10px green dotted;
   margin-left: auto;
   margin-right: auto;
   margin-top: 200px;
+  position: relative;
 }
 
-.box.small {
+
+.spacecat, .spacedog {
+  position: absolute;
   width: 200px;
-  height: 200px;
 }
 
-div:nth-child(2) {
-  background-image: url(../images/spacecat.png);
-      -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  left: 250px;
-  bottom: 400px;
+.spacecat {
+  top: -100px;
+  left: -100px;
 }
 
-div:nth-child(3) {
-  background-image: url(../images/spacedog.png);
-      -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  left: 250px;
-  bottom: 400px;
-  left: 800px;
-  bottom: 300px;
+.spacedog {
+  bottom: -100px;
+  right: -100px;
 }
 
 
